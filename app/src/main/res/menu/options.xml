@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/id_options_debug"
+        android:title="@string/menu_icon_debug_mode_off" />
+    <item
+        android:id="@+id/id_about"
+        android:title="@string/menu_about"
+        />
+</menu>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketActivity">
+
+
+    <ProgressBar
+        android:id="@+id/pb_ticket"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/bt_admin_create_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Create ticket"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_ticket_admin"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_admin_create_instance_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Create Instance Tickets"
+        app:layout_constraintTop_toBottomOf="@+id/bt_admin_create_ticket"
+        tools:layout_editor_absoluteX="163dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All user ticket endpoints"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_admin_create_instance_ticket" />
+
+    <Button
+        android:id="@+id/bt_user_create_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Create ticket"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="163dp" />
+
+    <Button
+        android:id="@+id/bt_user_create_instance_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Create Instance ticket"
+        app:layout_constraintTop_toBottomOf="@+id/bt_user_create_ticket"
+        tools:layout_editor_absoluteX="162dp" />
+
+    <Button
+        android:id="@+id/bt_get_ticket_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="GET Ticket Information"
+        app:layout_constraintTop_toBottomOf="@+id/bt_user_create_instance_ticket"
+        tools:layout_editor_absoluteX="165dp" />
+
+    <Button
+        android:id="@+id/bt_get_ticket_knowledge_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Get Ticket/knowledge Configuration"
+        app:layout_constraintTop_toBottomOf="@+id/bt_get_ticket_information"
+        tools:layout_editor_absoluteX="162dp" />
+
+    <Button
+        android:id="@+id/bt_export_pdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="export to pdf"
+        app:layout_constraintTop_toBottomOf="@+id/bt_get_ticket_knowledge_config"
+        tools:layout_editor_absoluteX="160dp" />
+
+    <Button
+        android:id="@+id/bt_guest_mode_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Guest Mode Token"
+        app:layout_constraintTop_toBottomOf="@+id/bt_export_pdf"
+        tools:layout_editor_absoluteX="160dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

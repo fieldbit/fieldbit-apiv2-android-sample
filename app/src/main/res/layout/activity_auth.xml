@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity">
+
+    <Button
+        android:id="@+id/bt_admin_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Admin Auth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id_secret" />
+
+    <Button
+        android:id="@+id/bt_user_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="User Auth"
+        app:layout_constraintEnd_toEndOf="@+id/bt_admin_auth"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/bt_admin_auth"
+        app:layout_constraintTop_toBottomOf="@+id/bt_admin_auth" />
+
+    <Button
+        android:id="@+id/bt_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="TIckets API"
+        app:layout_constraintTop_toTopOf="@+id/progressBar"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/bt_sites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Sites API"
+        app:layout_constraintTop_toBottomOf="@+id/bt_tickets"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/bt_renew_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Renew Token"
+        app:layout_constraintTop_toBottomOf="@+id/bt_user_auth"
+        tools:layout_editor_absoluteX="153dp" />
+
+    <Button
+        android:id="@+id/bt_set_identifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Set External id"
+        app:layout_constraintTop_toBottomOf="@+id/bt_renew_user"
+        tools:layout_editor_absoluteX="160dp" />
+
+    <TextView
+        android:id="@+id/tv_id_secret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_set_identifier"
+        android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

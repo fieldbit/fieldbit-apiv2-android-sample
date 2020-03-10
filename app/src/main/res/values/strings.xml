@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fieldbit API sample</string>
+
+
+    <string name="title_ticket_admin">All admin ticket endpoints</string>
+    <string name="menu_icon_debug_mode_off">Enable debug</string>
+    <string name="menu_icon_debug_mode_on">Disable debug</string>
+    <string name="all_end_points_title">All End Points</string>
+    <string name="menu_about">About</string>
+
+    <string name="about_content">App version: 1.0</string>
+    <string name="no_credential_message">Please fill your account credentials in the config file</string>
+</resources>
